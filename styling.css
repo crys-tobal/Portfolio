@@ -1,0 +1,290 @@
+* {
+
+    margin-bottom: 0;
+
+}
+
+div {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.content {
+
+    background-color: #fcfcfc;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #333;
+    justify-content: start;
+    z-index: -1;
+
+}
+
+h2 {
+
+    padding: 5px;
+    margin-bottom: 0;
+
+}
+
+header {
+
+    display: flex;
+    Width: 100%;
+    position: sticky;
+    height: 120px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 40px;
+
+}
+
+header::after {
+
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background: linear-gradient(to bottom, white 55%, rgba(0,0,0,0));
+    z-index: -1;
+
+
+}
+
+
+
+
+li {
+
+    list-style-type: none;
+    cursor: pointer;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+.parent {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+
+
+}
+
+.child {
+
+    display:flex;
+    position: absolute;
+    align-items: center;
+    justify-content:center ;
+
+}
+
+.left-align {
+
+    justify-content: start !important;
+
+}
+
+.right-align {
+
+    justify-content: end !important;
+
+}
+
+.header-name {
+
+    margin-left: 15.5%;
+
+}
+
+nav {
+
+    display: flex;
+    position:absolute;
+    right: 5%;
+
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+.max-width {
+
+    width: 100%;
+
+}
+
+
+
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+}
+
+nav li {
+
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 1.2em;
+    width: 120px;
+    transition: 100ms;
+
+}
+
+nav li:hover {
+
+    color: #7586a9;
+
+}
+
+.page-title {
+
+    max-width: 600px;
+    text-align: left;
+    top: 15%;
+
+}
+
+.left-page-margin {
+
+    left: 16%;
+
+}
+
+
+
+
+
+
+
+.gradient {
+
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    inset: 0;
+    overflow: hidden;
+    border: 50px;
+    top: -20%;
+    left: 0;
+    scale: 111%;
+
+}
+
+.gradient div {
+
+    position: absolute;
+    border-radius: 50%;
+    animation: meshGradient 6s infinite;
+    inset: 0;
+    margin: auto;
+    
+
+}
+
+@keyframes meshGradient {
+
+    70% {
+
+        transform: scale(1.2) translate(50px);
+
+    }
+
+}
+
+
+.gradient div:nth-child(1) {
+
+    width: 20%;
+    height: 30%;
+    background-color: rgb(188, 224, 255);
+    left: 31%;
+    top: -27%;
+    animation-delay: 0;
+
+
+}
+
+.gradient div:nth-child(2) {
+
+    width: 20%;
+    height: 30%;
+    background-color: rgb(0, 255, 132);
+    left: 74%;
+    top: -20%;
+    animation-delay: 8s;
+
+
+}
+
+.gradient div:nth-child(3) {
+
+    width: 20%;
+    height: 40%;
+    background-color: rgb(230, 31, 230);
+    left: 0%;
+    top: 10%;
+    animation-delay: 0.4s;
+
+
+}
+
+.gradient div:nth-child(4) {
+
+    width: 25%;
+    height: 30%;
+    background-color: rgb(37, 105, 144);
+    left: 60%;
+    top: 17%;
+    animation-delay: 3.2s;
+
+
+}
+
+.gradient div:nth-child(5) {
+
+    width: 40%;
+    height: 20%;
+    background-color: rgb(255, 251, 0);
+    left: 19%;
+    top: 30%;
+    animation-delay: 4.2s;
+
+
+}
+
+.gradient::after {
+
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(80px);
+
+
+}
