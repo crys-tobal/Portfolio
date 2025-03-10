@@ -160,7 +160,7 @@ nav li {
     padding: 10px;
     margin-right: 5px;
     font-size: 1.2em;
-    width: 120px;
+    width: 140px;
     transition: 100ms;
 
 }
@@ -334,6 +334,7 @@ nav li:hover {
     height: 5px;
     top: 100%;
     left: -7%;
+    border-radius: 2px;
 
 }
 
@@ -351,9 +352,10 @@ nav li:hover {
     color: white;
     padding: 10px 15px; 
     display: inline-block; 
-    border-radius: 5px; 
+    border-radius: 15px; 
     transition: 150ms ease-in;
     font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
 
 }
 
