@@ -1,6 +1,7 @@
 * {
 
     margin-bottom: 0;
+    caret-color: transparent;
 
 }
 
@@ -170,20 +171,23 @@ nav li:hover {
 
 }
 
-.title {
-
-    font-size: 2em;
-
-}
-
 .page-title {
 
     max-width: 700px;
     text-align: left;
     top: 15%;
     padding-right: 60px;
+    cursor: default;
 
 }
+
+.title {
+
+    font-size: 2em;
+
+}
+
+
 
 .left-page-margin {
 
@@ -304,10 +308,20 @@ nav li:hover {
 
 }
 
+
+
+
+
+
+
+
+
+
+
 .see-my-projects {
 
     font-size: 2em;
-    bottom: -100%;
+    bottom: -120%;
 
 }
 
@@ -320,5 +334,32 @@ nav li:hover {
     height: 5px;
     top: 100%;
     left: -7%;
+
+}
+
+
+
+
+
+
+
+
+
+.text-box {
+
+    background-color: black; 
+    color: white;
+    padding: 10px 15px; 
+    display: inline-block; 
+    border-radius: 5px; 
+    transition: 150ms ease-in;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.text-box:hover {
+
+    background-color: yellow;
+    color: black;
 
 }
