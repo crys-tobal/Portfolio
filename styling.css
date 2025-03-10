@@ -25,6 +25,7 @@ a {
 
     text-decoration: none;
     color: inherit !important;
+    display: inline-block;
 
 }
 
@@ -66,13 +67,13 @@ header {
 
     display: flex;
     Width: 100%;
-    position: sticky;
+    position: fixed;
     height: 80px;
     top: 0;
     background-color: rgba(255, 255, 255, 0);
     z-index: 1000;
     align-items: center;
-    justify-content: start;
+ 
     padding-bottom: 40px;
 
 }
@@ -89,6 +90,30 @@ header::after {
 
 
 }
+
+#header-name {
+
+
+}
+
+       @media (max-width:830px) {
+
+           #header-name {
+
+           }
+
+
+       }
+
+           @media (max-width:644px) {
+
+               #header-name {
+
+                   display: none;
+               }
+
+
+           }
 
 
 ul {
@@ -144,25 +169,12 @@ a {
 
 }
 
-.header-name {
-
-    margin-left: 15.5%;
-
-}
-
-nav {
-
-    display: flex;
-    position:absolute;
-    right: 5%;
 
 
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8em;
-    gap:4px;
 
-}
+
+    
+
 
 .max-width {
 
@@ -191,7 +203,7 @@ nav {
 
     max-width: 700px;
     text-align: left;
-    top: 15vh;
+    top: 25vh;
     padding-right: 70px;
     cursor: default;
 
@@ -201,7 +213,7 @@ nav {
 
         .page-title {
 
-            top:9%;
+            top:19%;
         
         }
 
@@ -230,29 +242,77 @@ nav {
 
 }
 
-    @media (max-width:644px) {
+    @media (max-width:450px) {
 
         .left-page-margin {
-            left:80px;
+            left:10vw;
         }
 
     }
 
+
+
+
+nav {
+
+    display: flex;
+    
+    margin-left: auto;
+    align-items: center;
+    padding-right: 5vw;
+    font-size: 0.8em;
+    gap:4px;
+    width: 35vw;
+    justify-content: space-between;
+}
+        
+        @media (max-width:800px) {
+            
+            nav {
+
+                width: 50vw;
+                right: 0;
+                padding: 0 5vw;
+                justify-content: center;
+
+            }
+
+
+        }
+    
+        @media (max-width:644px) {
+    
+            nav {
+    
+                width: 100%;
+                right: 0;
+                padding: 0 5vw;
+                justify-content: center;
+    
+            }
+    
+    
+        }
+    
 
         nav ul {
 
             display: flex;
             flex-direction: row;
             margin-bottom: 0;
+            width: 100%;
 
         }
 
         nav li {
 
-            padding: 10px;
+            flex: 1;
+            padding: 0;
             font-size: 1.2em;
-            width: 140px;
+            justify-content: center;
+            align-items: center;
             transition: 100ms;
+            min-width: 90px;
 
         }
 
@@ -426,7 +486,7 @@ nav {
     font-size: 2rem;
     bottom: 41%;
     text-align: left;
-    width: 340px;
+    width: 220px;
     justify-content: start;
     padding:0;
 
