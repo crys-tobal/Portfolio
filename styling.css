@@ -67,7 +67,7 @@ header {
     display: flex;
     Width: 100%;
     position: sticky;
-    height: 90px;
+    height: 80px;
     top: 0;
     background-color: rgba(255, 255, 255, 0);
     z-index: 1000;
@@ -156,10 +156,11 @@ nav {
     position:absolute;
     right: 5%;
 
-    padding: 20px;
+
     align-items: center;
     justify-content: center;
-  
+    font-size: 0.8em;
+    gap:4px;
 
 }
 
@@ -190,7 +191,7 @@ nav {
 
     max-width: 700px;
     text-align: left;
-    top: 15%;
+    top: 15vh;
     padding-right: 70px;
     cursor: default;
 
@@ -249,7 +250,6 @@ nav {
         nav li {
 
             padding: 10px;
-            margin-right: 5px;
             font-size: 1.2em;
             width: 140px;
             transition: 100ms;
