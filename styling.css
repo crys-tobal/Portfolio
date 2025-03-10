@@ -158,7 +158,7 @@ nav {
 
 }
 
-    @media (min-width:400px) {
+    @media (min-width:644px) {
 
         .desktop-flex-row {
 
@@ -180,7 +180,7 @@ nav {
     max-width: 700px;
     text-align: left;
     top: 15%;
-    padding-right: 60px;
+    padding-right: 70px;
     cursor: default;
 
 }
@@ -385,9 +385,12 @@ nav {
 
 .see-my-projects {
 
-    font-size: 2em;
-    bottom: -90%;
+    font-size: 2rem;
+    bottom: 20%;
     text-align: left;
+    width: 340px;
+    justify-content: start;
+    padding:0;
 
 }
 
@@ -396,11 +399,17 @@ nav {
     content: "";
     position:absolute;
     background: linear-gradient(to right, cyan, magenta, yellow);
-    width: 300px;
+    width: 256px;
     height: 5px;
     top: 100%;
-    left: -7%;
+    left: -2%;
     border-radius: 2px;
+
+}
+
+.see-my-projects h2 {
+
+    padding: 0;
 
 }
 
@@ -435,16 +444,18 @@ nav {
 
 .project-thumbnail-container{
 
-    width: 100%;
-    justify-content: center;
+
+    justify-content: start;
     align-items: center;
     gap: 4vmin;
-    top: -50%;
+    top: 85%;
+    margin-right: 60px;
+
 }
 
     .project-thumbnail-container div {
             
-        width: 10vmin;
+        width: 150px;
         height: 10vmin;
         background-color: aqua;
 
