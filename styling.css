@@ -194,6 +194,7 @@ nav {
 .left-page-margin {
 
     left: 16%;
+    position: absolute;
 
 }
 
@@ -386,6 +387,7 @@ nav {
 
     font-size: 2em;
     bottom: -90%;
+    text-align: left;
 
 }
 
