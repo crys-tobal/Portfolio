@@ -68,6 +68,11 @@ header::after {
 }
 
 
+ul {
+
+    padding-left: 0;
+
+}
 
 
 li {
@@ -147,29 +152,6 @@ nav {
 
 
 
-nav ul {
-
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0;
-
-}
-
-nav li {
-
-    padding: 10px;
-    margin-right: 5px;
-    font-size: 1.2em;
-    width: 140px;
-    transition: 100ms;
-
-}
-
-nav li:hover {
-
-    color: #7586a9;
-
-}
 
 .page-title {
 
@@ -187,8 +169,6 @@ nav li:hover {
 
 }
 
-
-
 .left-page-margin {
 
     left: 16%;
@@ -197,13 +177,74 @@ nav li:hover {
 
 
 
+        nav ul {
+
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0;
+
+        }
+
+        nav li {
+
+            padding: 10px;
+            margin-right: 5px;
+            font-size: 1.2em;
+            width: 140px;
+            transition: 100ms;
+
+        }
+
+            .nav-item:hover {
+
+                color: #7586a9;
+
+            }
+
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .submenu {
+            display: none;
+
+            position: absolute;
+            top: 70%;
+            left: 32%;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            font-size: 0.7em;
+
+        }
+
+        .submenu li:hover {
+
+            color: #7586a9;
+
+        }
+
+        .menu li:hover .submenu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+
+   
 
 
 
 
 .gradient {
 
-    height: 120vh;
+    height: 90vh;
     width: 100%;
     position: relative;
     inset: 0;
