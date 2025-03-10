@@ -5,6 +5,12 @@
 
 }
 
+html {
+
+    scroll-behavior: smooth;
+
+}
+
 div {
 
     display:flex;
@@ -29,6 +35,12 @@ a {
     color: #333;
     justify-content: start;
     z-index: -1;
+
+}
+
+h1 {
+
+    font-size: 2rem;
 
 }
 
@@ -97,7 +109,6 @@ a {
     z-index: 2;
     width: 100%;
 
-
 }
 
 .child {
@@ -146,6 +157,17 @@ nav {
     width: 100%;
 
 }
+
+    @media (min-width:400px) {
+
+        .desktop-flex-row {
+
+            flex-direction: row;
+
+        }
+
+    }    
+
 
 
 
@@ -220,6 +242,7 @@ nav {
             box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.2);
             z-index: 1;
             font-size: 0.7em;
+            border-radius: 5px;
 
         }
 
@@ -244,7 +267,7 @@ nav {
 
 .gradient {
 
-    height: 90vh;
+    height: 120vh;
     width: 100%;
     position: relative;
     inset: 0;
@@ -260,7 +283,7 @@ nav {
 
     position: absolute;
     border-radius: 50%;
-    animation: meshGradient 6s infinite;
+    animation: meshGradient 4s infinite;
     inset: 0;
     margin: auto;
     
@@ -362,7 +385,7 @@ nav {
 .see-my-projects {
 
     font-size: 2em;
-    bottom: -120%;
+    bottom: -90%;
 
 }
 
@@ -406,3 +429,29 @@ nav {
     color: black;
 
 }
+
+
+.project-thumbnail-container{
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4vmin;
+    top: -50%;
+}
+
+    .project-thumbnail-container div {
+            
+        width: 10vmin;
+        height: 10vmin;
+        background-color: aqua;
+
+    }
+
+    .project-thumbnail-container:nth-child(1) {
+
+
+
+    }
+
+   
