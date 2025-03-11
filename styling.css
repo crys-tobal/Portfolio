@@ -640,19 +640,54 @@ nav {
 
 .recent-projects-container {
 
-    top: 67%
+    top: 480px;
 
 }
+
+
+    @media (min-width:400px) {
+
+        .recent-projects-container {
+
+            top: 67%;
+        
+        }
+
+    }
 
     @media (min-width:644px) {
 
         .recent-projects-container {
 
-            top: 60%
+            top: 60%;
         
         }
 
     }
+
+    @media (max-height:650px) {
+
+        .recent-projects-container {
+
+            top: 400px;
+        
+        }
+
+    }
+
+    @media (max-height:400px) {
+
+        .recent-projects-container {
+
+            top: 350px;
+        
+        }
+
+    }
+
+   
+
+
 
 .project-thumbnail-container{
 
