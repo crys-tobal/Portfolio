@@ -41,7 +41,7 @@ a {
 
 h1 {
 
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 
 }
 
@@ -50,6 +50,22 @@ h1 {
         h1 {
 
             font-size: 2rem;
+        
+        }
+
+        #caayao {
+
+            display:none;
+
+           }
+
+    }
+
+    @media (min-width:390px) {
+
+        h1 {
+
+            font-size: 1.6rem;
         
         }
 
@@ -111,6 +127,8 @@ header::after {
 
                    display: none;
                }
+
+               
 
 
            }
@@ -206,6 +224,7 @@ a {
     top: 25vh;
     padding-right: 70px;
     cursor: default;
+    line-height: 1.2em;
 
 }
 
@@ -219,9 +238,18 @@ a {
 
     }
 
+    @media (max-width:390px) {
+
+        .page-title {
+
+        
+        }
+
+    }
+
 .title {
 
-    font-size: 1.6em;
+    font-size: 1.3em;
 
 }
 
@@ -230,6 +258,16 @@ a {
         .title {
 
             font-size: 2em;
+        
+        }
+
+    }
+
+    @media (min-width:390px) {
+
+        .title {
+
+            font-size: 1.6em;
         
         }
 
@@ -496,7 +534,7 @@ nav {
 
         .see-my-projects {
 
-            bottom:
+            bottom:;
         
         }
 
@@ -533,7 +571,7 @@ nav {
 
     background-color: black; 
     color: white;
-    padding: 10px 15px; 
+    padding: 7px 10px; 
     display: inline-block; 
     border-radius: 15px; 
     transition: 150ms ease-in;
@@ -546,13 +584,13 @@ nav {
 
         #UXDesigner {
 
-            max-width: 126px;
+            max-width: 99px;
 
         }
 
         #Frontend {
 
-            max-width: 142px;
+            max-width: 111px;
 
         }
 
