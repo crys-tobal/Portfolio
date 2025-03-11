@@ -535,7 +535,7 @@ nav {
     height: 100%;
     width: 100%;
     backdrop-filter: blur(80px);
-
+    -webkit-backdrop-filter: blur(80px);
 
 }
 
@@ -688,7 +688,7 @@ nav {
 
         }
 
-}
+    }
    
 
 
