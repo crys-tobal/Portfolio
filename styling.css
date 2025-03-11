@@ -542,6 +542,22 @@ nav {
 
 }
 
+    @media (max-width:350px) {
+
+        #UXDesigner {
+
+            max-width: 126px;
+
+        }
+
+        #Frontend {
+
+            max-width: 142px;
+
+        }
+
+    }
+
 .text-box:hover {
 
     background-color: yellow;
@@ -550,16 +566,36 @@ nav {
 }
 
 
+
+
+
+.recent-projects-container {
+
+    top: 67%
+
+}
+
+    @media (min-width:644px) {
+
+        .recent-projects-container {
+
+            top: 60%
+        
+        }
+
+    }
+
 .project-thumbnail-container{
 
 
     justify-content: start;
     align-items: center;
     gap: 4vmin;
-    top: 65%;
+    top: 193%;
     width: 70vw;
     transition: 300ms ease-in;
     overflow: hidden;
+    position: absolute;
     
 
 }
