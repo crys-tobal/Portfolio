@@ -667,7 +667,7 @@ nav {
     }
 
     
-    @media (min-aspect-ratio: 1/1) {
+    @media (min-aspect-ratio: 4/5) {
         @media (max-height:650px) {
 
             .recent-projects-container {
