@@ -687,7 +687,7 @@ nav {
     gap: 2vmin;
     top: 193%;
     left: 0%;
-    width: 70vw;
+    width: 74vw;
     transition: 300ms ease-in;
     overflow: hidden;
     position: absolute;
@@ -708,7 +708,7 @@ nav {
 .project-thumbnail-container > div {
 
     gap: 2vmin;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     width: 100%;
 
@@ -728,12 +728,6 @@ nav {
 
 }
 
-.project-thumbnail-container > div > div:hover {
-
-    width: 320px;
-
-
-}
 
     @media (min-width:590px) {
 
@@ -745,7 +739,6 @@ nav {
 
         .project-thumbnail-container > div > div {
 
-            max-width: 200px;
             flex: 1;
 
         }
