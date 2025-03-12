@@ -1,9 +1,3 @@
-document.getElementById("closeElement").addEventListener("click", function() {
-    document.getElementById("submenu").style.display = "none"; // Hides the element
-});
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownBtn = document.querySelector(".dropbtn");
     const dropdownMenu = document.querySelector(".dropdown-content");
@@ -26,20 +20,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the elements based on your selector
+    const elements = document.querySelectorAll(".project-thumbnail-container > div > div > div:first-child");
+
+    // Log the result to the console to inspect the selected elements
+    console.log(elements);
+
+    // Apply the 'target' class if elements are found
+    elements.forEach(element => element.classList.add("target"));
+});
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
-    const target = document.querySelector(".target");
+    // Select all elements with the 'target' class
+    const targets = document.querySelectorAll(".target");
+    const fixedHeightFromBottom = 150; // Change size when 150px from bottom
 
     function checkPosition() {
-        const rect = target.getBoundingClientRect();
-        const screenCenter = window.innerHeight / 2;
+        // Loop through all 'target' elements
+        targets.forEach(target => {
+            const rect = target.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
 
-        // Check if the element's center is near the middle of the screen
-        if (rect.top < screenCenter && rect.bottom > screenCenter) {
-            target.classList.add("active");
-        } else {
-            target.classList.remove("active");
-        }
+            // Monitor the *top* of the element instead of a changing reference point
+            const elementTop = rect.top;
+
+            // Expand when the top of the element reaches the 150px mark from the bottom
+            if (elementTop < viewportHeight - fixedHeightFromBottom) {
+                target.classList.add("active");
+            } 
+            // Shrink back when scrolled up past the trigger point
+            else {
+                target.classList.remove("active");
+            }
+        });
     }
 
     // Run on scroll & load

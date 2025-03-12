@@ -801,11 +801,11 @@ nav {
     .project-thumbnail-container > div > div > div:first-child {
 
                 background-color: rgb(204, 206, 248);
-                height: 250px;
+                height: 80px;
                 background-position: center;
                 background-size: cover;
                 padding: 30px;
-                width: 100%;
+                width: 80%;
 
             }
 
@@ -815,6 +815,8 @@ nav {
                 padding: 30px;
                 height: 50%;
                 width: 100%;
+                display: none;
+                transition: 100ms ease-in;
 
             }
 
@@ -844,36 +846,21 @@ nav {
         }
 
 
-
-
-
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        
-        /* Spacer to create scroll effect */
-        .spacer {
-            height: 100vh;
-        }
-        
-        /* Target Element */
         .target {
-            background: #ff6347;
+            background: #ff6347 !important;
             color: white;
-            padding: 20px 40px;
-            font-size: 24px;
+            padding: 15px 30px;
+            font-size: 18px;
             border-radius: 10px;
+            transition: 300ms ease-in;
+            height: 150px;
+            width: 250px;
             margin: auto;
-            width: max-content;
-            transition: transform 0.4s ease-out;
         }
-        
-        /* Scale Up When Active */
+
         .target.active {
-            transform: scale(1.5);
+            height: 250px !important;
+            width: 100% !important;
+
         }
-   
+
