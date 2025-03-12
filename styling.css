@@ -638,7 +638,7 @@ nav {
 
         .recent-projects-container {
 
-            top: 67%;
+            top: 62%;
         
         }
 
@@ -688,7 +688,6 @@ nav {
     top: 193%;
     left: 0%;
     width: 74vw;
-    transition: 300ms ease-in;
     overflow: hidden;
     position: absolute;
 
@@ -696,11 +695,13 @@ nav {
 
         @media (min-width: 800px) {
 
-            .project-thumbnail-container{
+            .project-thumbnail-container > div {
 
                 flex-direction: row ;
             
             }
+
+            
             
 
         }
@@ -711,6 +712,7 @@ nav {
     justify-content: space-between;
     align-items: start;
     width: 100%;
+    
 
 }
 
@@ -718,38 +720,60 @@ nav {
 .project-thumbnail-container > div > div {
             
     width: 100%;
-    height: 200px;
     background-color: aqua;
-    border-radius: 5px;
-    transition: 300ms ease-in;
-    padding: 30px;
-
-    flex-direction: column;
+    display: flex;
+    text-align: left;
 
 }
 
+    .project-thumbnail-container > div > div > div:first-child {
 
-    @media (min-width:590px) {
+                background-color: rgb(204, 206, 248);
+                height: 250px;
+                background-position: center;
+                background-size: cover;
+                padding: 30px;
+                width: 100%;
 
-        .project-thumbnail-container > div {
+            }
 
-            flex-direction: row;
+            .project-thumbnail-container > div > div > div:last-child {
 
+                background-color: rgb(248, 238, 204);
+                padding: 30px;
+                height: 50%;
+                width: 100%;
+
+            }
+
+        @media (min-width:1150px) {
+
+
+            .project-thumbnail-container > div > div {
+
+                flex-direction: row;
+
+
+            }
+
+            .project-thumbnail-container > div > div > div:first-child , 
+            .project-thumbnail-container > div > div > div:last-child {
+              
+                height: 320px;
+
+
+            }
+
+            .project-thumbnail-container > div > div > div:first-child {
+
+                width: 140%;
+
+            }
         }
 
-        .project-thumbnail-container > div > div {
-
-            flex: 1;
-
-        }
-
-    }
 
 
-
-
-
-       
+        
 
 
 
