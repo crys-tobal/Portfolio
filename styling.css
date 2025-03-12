@@ -380,6 +380,12 @@ a {
             left:10vw;
         }
 
+        .project-thumbnail-container {
+
+            width: 81vw !important;
+
+        }
+
     }
 
 
@@ -614,7 +620,7 @@ nav {
     content: "";
     position:absolute;
     background: linear-gradient(to right, cyan, magenta, yellow);
-    width: 256px;
+    width: 284px;
     height: 5px;
     top: 100%;
     left: -1%;
