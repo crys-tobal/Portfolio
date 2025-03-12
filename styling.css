@@ -620,7 +620,7 @@ nav {
     content: "";
     position:absolute;
     background: linear-gradient(to right, cyan, magenta, yellow);
-    width: 284px;
+    width: 213px;
     height: 5px;
     top: 100%;
     left: -1%;
@@ -757,7 +757,30 @@ nav {
 
     }
 
+                                            @media (min-width:9150px) {
 
+
+                                                .project-thumbnail-container > div > div {
+
+                                                    flex-direction: row;
+
+
+                                                }
+
+                                                .project-thumbnail-container > div > div > div:first-child , 
+                                                .project-thumbnail-container > div > div > div:last-child {
+                                                
+                                                    height: 320px;
+
+
+                                                }
+
+                                                .project-thumbnail-container > div > div > div:first-child {
+
+                                                    width: 140%;
+
+                                                }
+                                            }
 
 .project-thumbnail-container{
 
@@ -798,9 +821,7 @@ nav {
 .project-thumbnail-container > div > div {
             
     width: 100%;
-    background-color: aqua;
     display: flex;
-    text-align: left;
 
 }
 
@@ -817,39 +838,17 @@ nav {
 
             .project-thumbnail-container > div > div > div:last-child {
 
-                background-color: rgb(248, 238, 204);
-                padding: 30px;
-                height: 50%;
+                padding: 0;
+                height: 0;
                 width: 100%;
-                display: none;
-                transition: 100ms ease-in;
+                transition: 500ms ease-in;
+                visibility: hidden;
+                pointer-events: none;
+                opacity: 0;
 
             }
 
-        @media (min-width:1150px) {
-
-
-            .project-thumbnail-container > div > div {
-
-                flex-direction: row;
-
-
-            }
-
-            .project-thumbnail-container > div > div > div:first-child , 
-            .project-thumbnail-container > div > div > div:last-child {
-              
-                height: 320px;
-
-
-            }
-
-            .project-thumbnail-container > div > div > div:first-child {
-
-                width: 140%;
-
-            }
-        }
+                 
 
 
         .target {
@@ -861,12 +860,36 @@ nav {
             transition: 300ms ease-in;
             height: 150px;
             width: 250px;
-            margin: auto;
-        }
-
-        .target.active {
-            height: 250px !important;
-            width: 100% !important;
 
         }
+
+                .target.active {
+                    height: 200px !important;
+                    width: 100% !important;
+
+                }
+
+
+
+        .target2 {
+
+            color: rgb(0, 0, 0);
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 300ms ease-in;
+            height: 150px;
+            width: 250px;
+
+        }
+
+            .target2.active {
+                height: 250px !important;
+                width: 100% !important;
+                visibility: visible !important;
+                pointer-events:inherit;
+                padding: 30px;
+                opacity: 1 !important;
+            }
+
 
