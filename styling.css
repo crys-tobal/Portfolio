@@ -806,6 +806,13 @@ nav {
             
 
         }
+ 
+.project-thumbnail-container div {   
+    
+    background-size: cover !important;
+    background-position: center !important;
+
+}
         
 .project-thumbnail-container > div {
 
@@ -822,6 +829,7 @@ nav {
             
     width: 100%;
     display: flex;
+    align-items: start;
 
 }
 
@@ -845,6 +853,7 @@ nav {
                 visibility: hidden;
                 pointer-events: none;
                 opacity: 0;
+                text-align: start;
 
             }
 
@@ -887,9 +896,35 @@ nav {
                 height: 250px !important;
                 width: 100% !important;
                 visibility: visible !important;
-                pointer-events:inherit;
+                pointer-events:inherit !important;
                 padding: 30px;
                 opacity: 1 !important;
             }
 
 
+
+
+
+.project-thumbnail-container > div:nth-child(1) > div:first-child > div:first-child {
+
+    background-image: url('Photos/JRMSwinWeb1.jpg') !important;
+
+}
+
+.project-thumbnail-container > div:nth-child(1) > div:last-child > div:first-child {
+
+    background-image: url('Photos/AriseApp1.jpg') !important;
+
+}
+
+.project-thumbnail-container > div:nth-child(2) > div:first-child > div:first-child {
+
+    background-image: url('Photos/ArupUoS1.jpg') !important;
+
+}
+
+.project-thumbnail-container > div:nth-child(2) > div:last-child > div:first-child {
+
+    background-image: url('Photos/ThinkerArt.JPG') !important;
+
+}
