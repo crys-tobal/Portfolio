@@ -80,23 +80,18 @@ h1 {
     }
 
 
-    .page-title span {
+    .h1 > span > span {
 
         font-weight: 700;
 
     }
 
-                .acristobal {
+                .cristobal > span , .cristobalcaayao > span {
 
                     font-weight: 700;
 
                 }
 
-                .acristobalcaayao {
-
-                    font-weight: 700;
-
-                }
 
 h2 {
 
@@ -850,10 +845,35 @@ nav {
 
 
 
+
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
         
-
-
-
-
-
+        /* Spacer to create scroll effect */
+        .spacer {
+            height: 100vh;
+        }
+        
+        /* Target Element */
+        .target {
+            background: #ff6347;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            border-radius: 10px;
+            margin: auto;
+            width: max-content;
+            transition: transform 0.4s ease-out;
+        }
+        
+        /* Scale Up When Active */
+        .target.active {
+            transform: scale(1.5);
+        }
    

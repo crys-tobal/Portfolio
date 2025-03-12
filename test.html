@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Expanding & Shrinking Element</title>
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        /* Spacer to create scrolling space */
+        .spacer {
+            height: 100vh;
+
+        }
+
+        /* The element that will expand and shrink */
+        .target {
+            background: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 300ms ease-in;
+            height: 150px;
+            width: 250px;
+            margin: auto;
+        }
+
+        /* Scale up when it reaches the trigger point */
+        .target.active {
+            height: 250px;
+            width: 400px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="spacer"></div> <!-- Creates empty space above for scrolling -->
+
+    <div class="target">Scroll to See Me Grow & Shrink Smoothly!</div> <!-- The target element -->
+
+    <div class="spacer"></div> <!-- More empty space below -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const target = document.querySelector(".target");
+            const fixedHeightFromBottom = 260; // Change size when 150px from bottom
+
+            function checkPosition() {
+                const rect = target.getBoundingClientRect();
+                const viewportHeight = window.innerHeight;
+                
+                // Monitor the *top* of the element instead of a changing reference point
+                const elementTop = rect.top;
+
+                // Expand when the top of the element reaches the 150px mark from the bottom
+                if (elementTop < viewportHeight - fixedHeightFromBottom) {
+                    target.classList.add("active");
+                } 
+                // Shrink back when scrolled up past the trigger point
+                else {
+                    target.classList.remove("active");
+                }
+            }
+
+            // Run on scroll & load
+            window.addEventListener("scroll", checkPosition);
+            window.addEventListener("resize", checkPosition);
+            checkPosition(); // Run once on page load
+        });
+    </script>
+
+</body>
+</html>

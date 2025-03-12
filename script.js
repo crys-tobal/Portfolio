@@ -22,3 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const target = document.querySelector(".target");
+
+    function checkPosition() {
+        const rect = target.getBoundingClientRect();
+        const screenCenter = window.innerHeight / 2;
+
+        // Check if the element's center is near the middle of the screen
+        if (rect.top < screenCenter && rect.bottom > screenCenter) {
+            target.classList.add("active");
+        } else {
+            target.classList.remove("active");
+        }
+    }
+
+    // Run on scroll & load
+    window.addEventListener("scroll", checkPosition);
+    window.addEventListener("resize", checkPosition);
+    checkPosition(); // Run once on page load
+});
