@@ -711,6 +711,7 @@ nav {
     position: absolute;
     left: 0;
 
+
 }
 
            
@@ -1011,3 +1012,26 @@ nav {
     }
 
      
+
+
+
+.get-in-contact {
+
+    margin-top: 2020px;
+
+}
+
+    .get-in-contact::after {
+
+
+            content: "";
+            position:absolute;
+            background: linear-gradient(to right, cyan, magenta, yellow);
+            width: 213px;
+            height: 5px;
+            top: 100%;
+            left: -1%;
+            border-radius: 2px;
+
+
+    }
