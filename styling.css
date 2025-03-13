@@ -456,7 +456,7 @@ li {
         width: 100vw;
         overflow: hidden;
         position: absolute;
-        margin-top: 25px;
+        margin-top: 50px;
         transition: all 300ms ease;
     
     }
@@ -1107,7 +1107,7 @@ nav {
 
 .get-in-contact h2 {
 
-    margin-top: calc(100px - 12vw);
+    margin-top: calc(125px - 12vw);
     font-weight: 400;
     margin-bottom: 25px;
 
@@ -1115,7 +1115,7 @@ nav {
 
       @media (min-width:495px) {
         .get-in-contact h2 {
-        margin-top: calc(200px - 10vw);
+        margin-top: calc(225px - 10vw);
         }
     }
 
