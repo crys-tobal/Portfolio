@@ -124,6 +124,7 @@ h2 {
     padding: 0px;
     margin-bottom: 0;
     font-size: 1.5rem;
+    text-align: start;
 
 }
 
@@ -1052,12 +1053,13 @@ nav {
 
     margin-top: 110px;
     font-weight: 400;
+    margin-bottom: 25px;
 
 }
 
  
 
-    .get-in-contact::after {
+    .get-in-contact > h2::after {
 
 
             content: "";
@@ -1065,10 +1067,15 @@ nav {
             width: 195px;
             height: 5px;
             border-radius: 2px;
+            display: block;
 
     }
 
+    .get-in-contact > a {
 
+       color: #7586a9 !important;
+    
+    }
 
 
 
