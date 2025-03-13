@@ -365,6 +365,13 @@ a {
 
     }
 
+
+    #more-about-me {
+
+        text-decoration: underline;
+        color: #7586a9 !important;
+
+    }
    
 
 .left-page-margin {
@@ -410,7 +417,13 @@ a {
     
             }
             
+            .project-thumbnail-container a {
 
+                font-size: 0.8em !important;
+                text-decoration: underline !important;
+                color: #7586a9 !important;
+            
+            }
 
 
 nav {
@@ -845,6 +858,16 @@ nav {
 
 }
 
+    @media (max-width:800px) {
+        .project-thumbnail-container > div > div {
+                    
+            align-items: center;
+            left: 0;
+            width: 100vw !important;
+
+        }
+    }
+
             .project-thumbnail-container > div > div > div:first-child {
 
                 background-color: rgb(204, 206, 248);
@@ -929,16 +952,6 @@ nav {
                 }
 
 
-                        @media (max-width:800px) {
-
-                            .target {
-
-                                left: 10vw;
-
-                            }
-
-                        }
-
 
 
         .target2 {
@@ -1017,7 +1030,7 @@ nav {
 
 .get-in-contact {
 
-    margin-top: 2020px;
+    margin-top: 2120px;
 
 }
 
