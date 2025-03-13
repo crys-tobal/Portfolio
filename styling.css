@@ -27,6 +27,12 @@ a {
 
 }
 
+header a {
+
+    text-decoration: none;
+
+}
+
 .content {
 
     background-color: #fcfcfc;
@@ -53,7 +59,7 @@ h1 {
 
     }
 
-    @media (min-width:645px) {
+    @media (min-width:675px) {
 
         h1 {
 
