@@ -949,6 +949,7 @@ nav {
             transition: 300ms ease-in;
             width: 250px;
             justify-content: start;
+            align-items: start;
 
         }
 
