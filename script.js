@@ -110,3 +110,26 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", checkPosition);
     checkPosition(); // Run once on page load
 });
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if there's a hash in the URL (e.g., example.com/page.html#section)
+    if (window.location.hash) {
+        setTimeout(function () { 
+            const targetId = window.location.hash.substring(1);
+            const target = document.getElementById(targetId);
+
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 80, // Adjust position
+                    behavior: "smooth"
+                });
+            }
+        }, 100); // Small delay to allow content to load
+    }
+});

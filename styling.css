@@ -18,7 +18,6 @@ div {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 
 }
 
@@ -33,6 +32,7 @@ header a {
     text-decoration: none;
 
 }
+
 
 .content {
 
@@ -68,6 +68,7 @@ header a {
 h1 {
 
     font-size: 1.5rem;
+
 
 }   
 
@@ -131,14 +132,16 @@ h2 {
 header {
 
     display: flex;
+    
     Width: 100%;
-    position: fixed;
+    position: sticky;
     height: 80px;
     top: 0;
     background-color: rgba(255, 255, 255, 0);
     z-index: 1000;
     align-items: center;
- 
+    text-align: center;
+    
     padding-bottom: 40px;
 
 }
@@ -181,7 +184,16 @@ header::after {
 
         .navbar {
             padding: 10px;
-            margin-right: 5vw;
+            margin-right: 0;
+        }
+
+        @media (min-width:800px) {
+
+            .navbar {
+                padding: 10px;
+                margin-right: 5vw;
+            }
+
         }
         
         .menu {
@@ -399,6 +411,13 @@ li {
     margin-left: 14vw;
 
 }
+
+
+        .right-page-margin {
+
+            margin-right: 14vw;
+
+        }
 
 
     .project-thumbnail-container {
@@ -984,7 +1003,7 @@ nav {
 
         }
 
-        @media (max-width:800px) {
+        @media (max-width:799px) {
 
             .target2 {
 
@@ -1078,6 +1097,59 @@ nav {
        color: #7586a9 !important;
     
     }
+
+
+
+
+
+
+
+
+    .projects-content {
+
+        text-align: left;
+    
+    }
+    
+        .projects-content > div > h1 {
+    
+            text-align: left;
+            font-weight: 700;
+            margin-top: 60px;
+    
+        }
+    
+        .projects-content p {
+    
+            margin: 80px 0;
+    
+        }
+    
+        .projects-content h2 {
+    
+            font-weight: 700;
+    
+        }
+    
+
+        .project-card {
+
+            
+
+        }
+
+        
+        .project-card p {
+
+            margin: 20px 0px 80px;
+
+        }
+
+
+
+
+
+
 
 
 
