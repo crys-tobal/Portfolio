@@ -24,8 +24,7 @@ div {
 a {
 
     text-decoration: none;
-    color: inherit !important;
-    display: inline-block;
+    color: unset;
 
 }
 
@@ -168,8 +167,6 @@ header::after {
 
         
         .menu a {
-            text-decoration: none;
-            color: white;
             display: block;
         }
         
@@ -1034,13 +1031,23 @@ nav {
 
 }
 
+    @media (min-width:800px) {
+
+        .get-in-contact {
+
+            margin-top: 1370px;
+        
+        }
+
+    }
+
     .get-in-contact::after {
 
 
             content: "";
             position:absolute;
             background: linear-gradient(to right, cyan, magenta, yellow);
-            width: 213px;
+            width: 195px;
             height: 5px;
             top: 100%;
             left: -1%;
