@@ -23,7 +23,6 @@ div {
 
 a {
 
-    text-decoration: none;
     color: unset;
 
 }
@@ -237,12 +236,6 @@ li {
 
     list-style-type: none;
     cursor: pointer;
-
-}
-
-a {
-
-    text-decoration: none;
 
 }
 
