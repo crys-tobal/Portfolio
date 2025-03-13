@@ -915,12 +915,6 @@ nav {
 
             .project-thumbnail-container > div > div > div:last-child {
 
-                height: 0;
-                width: 100%;
-                transition: 500ms ease-in;
-                visibility: hidden;
-                opacity: 0;
-                text-align: start;
 
             }
 
@@ -973,33 +967,41 @@ nav {
         .target2 {
 
             color: rgb(0, 0, 0);
-            padding: 15px 30px;
+            padding: 0 30px;
             font-size: 18px;
             border-radius: 10px;
             transition: 300ms ease-in;
-            width: 250px;
+            width: 100%;
             justify-content: start;
             align-items: start;
+            height: max-content !important;
+
+            
+            transition: 500ms ease-in;
+            visibility: hidden;
+            opacity: 0;
+            text-align: start;
+
+        }
+
+        @media (max-width:800px) {
+
+            .target2 {
+
+                padding: 0px 14vw;
+
+            }
 
         }
 
             .target2.active {
-                height: max-content !important;
-                width: 100% !important;
+
                 visibility: visible !important;
-                padding: 15px 30px;
                 opacity: 1 !important;
+                padding-top: 15px;
             }
 
-                @media (max-width:800px) {
-
-                    .target2.active {
-
-                        padding: 15px 14vw;
-
-                    }
-
-                }
+               
 
 
 
