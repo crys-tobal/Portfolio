@@ -1035,15 +1035,35 @@ nav {
 
 .get-in-contact {
 
-    margin-top: 1250px;
+    margin-top: 1450px;
 
 }
+
+    @media (min-width:495px) {
+
+        .get-in-contact {
+
+            margin-top: 1350px;
+        
+        }
+
+    }
 
     @media (min-width:800px) {
 
         .get-in-contact {
 
-            margin-top: 550px;
+            margin-top: 730px;
+        
+        }
+
+    }
+
+    @media (min-width:1200px) {
+
+        .get-in-contact {
+
+            margin-top: 430px;
         
         }
 
