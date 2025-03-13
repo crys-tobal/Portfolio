@@ -40,18 +40,31 @@ header a {
     color: #333;
     justify-content: start;
     z-index: -1;
-    height: 2500px;
+    height: 2350px;
 
 }
+
+
+    @media (min-width:495px) {
+
+        .content {
+
+            height: 2160px;
+        
+        }
+
+    }
 
     @media (min-width:800px) {
 
         .content {
 
-            height: 1500px;
+            height: 1450px;
+        
         }
 
     }
+
 
 h1 {
 
@@ -906,7 +919,6 @@ nav {
                 width: 100%;
                 transition: 500ms ease-in;
                 visibility: hidden;
-                pointer-events: none;
                 opacity: 0;
                 text-align: start;
                 z-index: -1;
@@ -976,7 +988,6 @@ nav {
                 height: max-content !important;
                 width: 100% !important;
                 visibility: visible !important;
-                pointer-events:inherit !important;
                 padding: 15px 30px;
                 opacity: 1 !important;
             }
@@ -1029,45 +1040,23 @@ nav {
 
     }
 
+
+    .visit-link {
+
+        font-weight: 700;
+
+    }
      
 
 
 
 .get-in-contact {
 
-    margin-top: 1450px;
+    margin-top: 50px;
 
 }
 
-    @media (min-width:495px) {
-
-        .get-in-contact {
-
-            margin-top: 1350px;
-        
-        }
-
-    }
-
-    @media (min-width:800px) {
-
-        .get-in-contact {
-
-            margin-top: 730px;
-        
-        }
-
-    }
-
-    @media (min-width:1200px) {
-
-        .get-in-contact {
-
-            margin-top: 430px;
-        
-        }
-
-    }
+ 
 
     .get-in-contact::after {
 
