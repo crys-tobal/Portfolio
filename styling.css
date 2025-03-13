@@ -1050,9 +1050,10 @@ nav {
 
 
 
-.get-in-contact {
+.get-in-contact h2 {
 
     margin-top: 50px;
+    font-weight: 400;
 
 }
 
@@ -1074,7 +1075,25 @@ nav {
 
 
 
+    .social-media {
 
+        height: 50px;
+        width: 50px;
+        margin: 17px;
+        color: white;
+        padding: 0;
+
+    }
+
+    img {
+
+        width: 100%;
+        height: auto;
+        object-position: center;
+        object-fit: contain;
+
+    }
+    
 
 
     footer {
