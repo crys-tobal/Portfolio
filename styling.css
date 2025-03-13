@@ -388,6 +388,30 @@ a {
 
     }
 
+    .project-thumbnail-container {
+
+        align-items: start;
+        gap: 2vmin;
+        top: 193%;
+        left: 10vw;
+        width: 81vw;
+        overflow: hidden;
+        position: absolute;
+        margin-top: 25px;
+    
+    }
+    
+            @media (min-width: 800px) {
+    
+                .project-thumbnail-container > div {
+    
+                    flex-direction: row ;
+                    left: 14vw;
+                
+                }       
+                
+    
+            }
 
 
 
@@ -686,6 +710,8 @@ nav {
 .recent-projects-container {
 
     top: 480px;
+    position: absolute;
+    left: 0;
 
 }
 
@@ -782,30 +808,7 @@ nav {
                                                 }
                                             }
 
-.project-thumbnail-container{
 
-    align-items: start;
-    gap: 2vmin;
-    top: 193%;
-    left: 0%;
-    width: 74vw;
-    overflow: hidden;
-    position: absolute;
-
-}
-
-        @media (min-width: 800px) {
-
-            .project-thumbnail-container > div {
-
-                flex-direction: row ;
-            
-            }
-
-            
-            
-
-        }
  
 .project-thumbnail-container div {   
     
@@ -816,7 +819,7 @@ nav {
         
 .project-thumbnail-container > div {
 
-    gap: 2vmin;
+    gap: 10vmin;
     justify-content: space-between;
     align-items: start;
     width: 100%;
@@ -833,7 +836,7 @@ nav {
 
 }
 
-    .project-thumbnail-container > div > div > div:first-child {
+            .project-thumbnail-container > div > div > div:first-child {
 
                 background-color: rgb(204, 206, 248);
                 height: 80px;
@@ -841,12 +844,27 @@ nav {
                 background-size: cover;
                 padding: 30px;
                 width: 80%;
+                position: relative;
 
             }
 
+                .project-thumbnail-container > div > div > div:first-child::after {
+
+
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 12%); /* Adjust the opacity (0.4 = 40% darkening) */
+                        border-radius: 10px;
+                        transition: 300ms ease-in;
+
+                }
+
             .project-thumbnail-container > div > div > div:last-child {
 
-                padding: 0;
                 height: 0;
                 width: 100%;
                 transition: 500ms ease-in;
@@ -854,6 +872,7 @@ nav {
                 pointer-events: none;
                 opacity: 0;
                 text-align: start;
+                z-index: -1;
 
             }
 
@@ -878,6 +897,16 @@ nav {
 
                 }
 
+                .project-thumbnail-container > div > div > div:first-child.active::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0); /* Transparent background */
+                }
+
 
 
         .target2 {
@@ -887,13 +916,13 @@ nav {
             font-size: 18px;
             border-radius: 10px;
             transition: 300ms ease-in;
-            height: 150px;
             width: 250px;
+            justify-content: start;
 
         }
 
             .target2.active {
-                height: 250px !important;
+                height: max-content !important;
                 width: 100% !important;
                 visibility: visible !important;
                 pointer-events:inherit !important;
@@ -925,6 +954,18 @@ nav {
 
 .project-thumbnail-container > div:nth-child(2) > div:last-child > div:first-child {
 
-    background-image: url('Photos/ThinkerArt.JPG') !important;
+    background-image: url('Photos/ThinkerArt.jpg') !important;
 
 }
+
+
+    .project-thumbnail-container h2 {
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: start;
+ 
+
+    }
+
+     
