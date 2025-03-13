@@ -162,7 +162,7 @@ header::after {
             padding: 0;
             margin: 0;
             display: flex;
-            gap 20px;
+            gap: 20px;
         }
         
 
@@ -374,44 +374,42 @@ a {
 
 }
 
-    @media (max-width:450px) {
-
-        .left-page-margin {
-            left:10vw;
-        }
-
-        .project-thumbnail-container {
-
-            width: 81vw !important;
-
-        }
-
-    }
 
     .project-thumbnail-container {
 
         align-items: start;
-        gap: 2vmin;
+        gap: 7vmin;
         top: 193%;
-        left: 10vw;
-        width: 81vw;
+        left: 0;
+        width: 100vw;
         overflow: hidden;
         position: absolute;
         margin-top: 25px;
+        transition: 300ms ease-in;
     
     }
+
+
+        
     
             @media (min-width: 800px) {
+
+                .project-thumbnail-container {
+    
+                    left: 14vw !important;
+                    width: 74vw !important;
+                    gap: 2vmin;
+                
+                }     
     
                 .project-thumbnail-container > div {
     
                     flex-direction: row ;
-                    left: 14vw;
                 
                 }       
-                
     
             }
+            
 
 
 
@@ -819,13 +817,23 @@ nav {
         
 .project-thumbnail-container > div {
 
-    gap: 10vmin;
+    gap: 7vmin;
     justify-content: space-between;
     align-items: start;
     width: 100%;
-    
+    transition: 300ms ease-in;
 
 }
+
+    @media (min-width:800px){
+
+        .project-thumbnail-container > div {
+            gap: 2vw;
+        }
+
+    }
+
+
 
 
 .project-thumbnail-container > div > div {
@@ -888,14 +896,26 @@ nav {
             transition: 300ms ease-in;
             height: 150px;
             width: 250px;
+            left: 0;
 
         }
 
                 .target.active {
                     height: 200px !important;
                     width: 100% !important;
+                    left: 0;
 
                 }
+
+                    @media(max-width:800px) {
+                        
+                        .target.active {
+
+                            border-radius: 0;
+
+                        }
+
+                    }
 
                 .project-thumbnail-container > div > div > div:first-child.active::after {
                     content: "";
@@ -906,6 +926,17 @@ nav {
                     height: 100%;
                     background: rgba(0, 0, 0, 0); /* Transparent background */
                 }
+
+
+                        @media (max-width:800px) {
+
+                            .target {
+
+                                left: 10vw;
+
+                            }
+
+                        }
 
 
 
@@ -926,9 +957,19 @@ nav {
                 width: 100% !important;
                 visibility: visible !important;
                 pointer-events:inherit !important;
-                padding: 30px;
+                padding: 15px 30px;
                 opacity: 1 !important;
             }
+
+                @media (max-width:800px) {
+
+                    .target2.active {
+
+                        padding: 15px 14vw;
+
+                    }
+
+                }
 
 
 
