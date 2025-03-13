@@ -1,9 +1,9 @@
-
-
 * {
 
     margin-bottom: 0;
     caret-color: transparent;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #333;
 
 }
 
@@ -36,8 +36,7 @@ header a {
 
 .content {
 
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: #333;
+
     justify-content: start;
 
     height: 2350px;
@@ -1051,7 +1050,7 @@ nav {
 
 .get-in-contact h2 {
 
-    margin-top: 50px;
+    margin-top: 110px;
     font-weight: 400;
 
 }
