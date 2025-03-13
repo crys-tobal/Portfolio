@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     // Select all elements with the 'target' class
     const targets = document.querySelectorAll(".target");
-    const fixedHeightFromBottom = 150; // Change size when 150px from bottom
+    const fixedHeightFromBottom = 200; // Change size when 150px from bottom
 
     function checkPosition() {
         // Loop through all 'target' elements
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     // Select all elements with the 'target' class
     const targets = document.querySelectorAll(".target2");
-    const fixedHeightFromBottom = 80; // Change size when 150px from bottom
+    const fixedHeightFromBottom = 150; // Change size when 150px from bottom
 
     function checkPosition() {
         // Loop through all 'target' elements
