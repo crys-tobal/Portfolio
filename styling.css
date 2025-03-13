@@ -895,7 +895,7 @@ nav {
         
 .project-thumbnail-container > div {
 
-    gap: 7vmin;
+    gap: 2vmin;
     justify-content: space-between;
     align-items: start;
     width: 100%;
@@ -1049,7 +1049,7 @@ nav {
 
 
                 opacity: 1 !important;
-                padding-top: 15px;
+                padding-top: 25px;
                 padding-bottom: 50px;
                 transform: translateY(0%);
                 max-height: max-content;
