@@ -1050,6 +1050,7 @@ nav {
 
                 opacity: 1 !important;
                 padding-top: 15px;
+                padding-bottom: 50px;
                 transform: translateY(0%);
                 max-height: max-content;
             }
@@ -1106,7 +1107,7 @@ nav {
 
 .get-in-contact h2 {
 
-    margin-top: calc(-200px - 12vw);
+    margin-top: calc(100px - 12vw);
     font-weight: 400;
     margin-bottom: 25px;
 
@@ -1114,16 +1115,11 @@ nav {
 
       @media (min-width:495px) {
         .get-in-contact h2 {
-        margin-top: calc(600px - 10vw);
+        margin-top: calc(200px - 10vw);
         }
     }
 
 
-    @media (min-width:800px) {
-        .get-in-contact h2 {
-        margin-top: calc(600px - 10vw);
-        }
-    }
 
  
 
