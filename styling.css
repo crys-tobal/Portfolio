@@ -1314,24 +1314,30 @@ nav {
 
     .project-card > div {
 
-        width: 80%;
+        width: 90%;
         max-width: 900px;
         border-radius: 15px;
         background-color: slategrey;
         padding: 15px 20px;
-        color: white;
+        color: #ffffff;
 
     }
 
         @media (min-width:644px) {
 
 
+            .project-card > div {
 
-                .project-card .desktop-flex-row {
+                width: 80%;
+        
+            }
+        
 
-                    flex-direction: row;
-    
-                }
+            .project-card .desktop-flex-row {
+
+                flex-direction: row;
+
+            }
         }
 
 
