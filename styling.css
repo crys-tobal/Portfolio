@@ -1005,6 +1005,16 @@ nav {
 
         }
 
+            @media (min-width:800px) {
+
+                .target {
+
+                    width: 30vw;
+        
+                }
+
+            }
+
                 .target.active {
                     height: 200px !important;
                     width: 100% !important;
