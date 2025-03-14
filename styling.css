@@ -286,7 +286,7 @@ ul {
 li {
 
     list-style-type: none;
-    cursor: pointer;
+
 
 }
 
@@ -562,6 +562,7 @@ nav {
             align-items: center;
             transition: 100ms;
             min-width: 90px;
+            cursor: pointer;
 
         }
 
@@ -1300,7 +1301,7 @@ nav {
         max-width: 900px;
         border-radius: 15px;
         background-color: slategrey;
-        padding: 15px 10px;
+        padding: 15px 20px;
         color: white;
 
     }
