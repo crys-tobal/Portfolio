@@ -128,6 +128,17 @@ h2 {
 
 }
 
+strong {
+
+    font-weight: bold;
+
+}
+
+
+
+
+
+
 header {
 
     display: flex;
@@ -454,7 +465,7 @@ li {
         top: 100%;
         left: 0;
         width: 100vw;
-        overflow: hidden;
+
         position: absolute;
         margin-top: 50px;
         transition: 300ms ease-in;
@@ -1173,6 +1184,33 @@ nav {
         .projects-content p {
     
             margin: 80px 0;
+            max-width: 600px;
+    
+        }
+
+        .projects-content h2 {
+    
+            font-weight: 700;
+            text-align: left;
+            margin:auto;
+    
+        }
+
+            @media (min-width:644px) {
+
+                .projects-content h2 {
+                    
+                    margin: 0px 30px;
+            
+                }
+
+            }
+
+
+        .project-card {
+    
+            align-items: center;
+            justify-content: center;
     
         }
 
@@ -1181,17 +1219,9 @@ nav {
             margin: 30px 0;
     
         }
+      
     
-        .projects-content h2 {
-    
-            font-weight: 700;
-            text-align: left;
-            width: 70vw;
-    
-        }
-    
-
-        .project-card > span:has(a) {
+        .project-card > div > span:has(a) {
 
             text-decoration: none !important;
             background-color: slategrey; 
@@ -1210,65 +1240,81 @@ nav {
           
 
 
-            @media (min-width:644px) {
-                .project-card p, .project-card strong {
-
-                    width: 83vh;
-
-                }
-            }
-
-        .project-card > div > div > strong:first-of-type {
-
-            font-size: 1.5em;
-
-        }
-
-        .project-card > div > div {
+        .project-card > div > div > div {
 
             width: 100%;
             align-items: center;
 
         }
 
-        .project-card div > *:last-child {
-
-            background-color: slategrey;
-            color: white;
-            border-radius: 8px;
-            width: 100%;
-
-        }
 
         .project-card > div > div > div > div {
           
             background-size: cover;
             background-position: center;
-            height: 50px;
-            margin: 15px 0px;
-            width: 100%;
+
+        }
+
+        .project-card > div > div > div:last-child {
+          
+            padding: 20px;
+            flex: 0 0 40%;  /* Takes up 40% of the space */
+
 
         }
 
         .project-card .img {
 
-            height: 400px;
+            height: 200px;
+            border-radius: 5px;
+            width: 100%;
 
         }
+
+        .project-card li {
+
+            margin-bottom: 20px;
+
+        }
+
+        .project-card a > span {
+
+
+                background-color: rgb(255, 255, 255); 
+                color: slategrey;
+                padding: 7px 10px; 
+                display: inline-block; 
+                border-radius: 15px; 
+                transition: 150ms ease-in;
+                letter-spacing: 0.5px;
+                margin: 15px 0px;
+                font-weight: 700;
+
+
+        }
+
+
+    .project-card > div {
+
+        width: 80%;
+        max-width: 900px;
+        border-radius: 15px;
+        background-color: slategrey;
+        padding: 15px 10px;
+        color: white;
+
+    }
 
         @media (min-width:644px) {
 
-                .project-card > div > div > div {
-                    
-                    width: 80%;
-                    border-radius: 8px;
 
+
+                .project-card .desktop-flex-row {
+
+                    flex-direction: row;
+    
                 }
         }
-
-
-
-
 
 
 
