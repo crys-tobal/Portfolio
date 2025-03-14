@@ -498,6 +498,7 @@ li {
                 font-size: 0.8em !important;
                 text-decoration: underline !important;
                 color: #7586a9 !important;
+                width: 100%;
             
             }
 
@@ -911,6 +912,7 @@ nav {
     
     background-size: cover !important;
     background-position: center !important;
+    position: relative;
 
 }
         
@@ -967,7 +969,7 @@ nav {
 
             }
 
-                .project-thumbnail-container > div > div > div:first-child::after {
+                .project-thumbnail-container > div > div > a > div::after {
 
 
                         content: "";
@@ -1020,7 +1022,7 @@ nav {
 
                     }
 
-                .project-thumbnail-container > div > div > div:first-child.active::after {
+                .project-thumbnail-container > div > div > a > div.active::after {
                     content: "";
                     position: absolute;
                     top: 0;
@@ -1080,25 +1082,25 @@ nav {
 
 
 
-.project-thumbnail-container > div:nth-child(1) > div:first-child > div:first-child {
+.project-thumbnail-container > div:nth-child(1) > div:first-child > a > div {
 
     background-image: url('Photos/JRMSwinWeb1.jpg') !important;
 
 }
 
-.project-thumbnail-container > div:nth-child(1) > div:last-child > div:first-child {
+.project-thumbnail-container > div:nth-child(1) > div:last-child > a > div {
 
     background-image: url('Photos/AriseApp1.jpg') !important;
 
 }
 
-.project-thumbnail-container > div:nth-child(2) > div:first-child > div:first-child {
+.project-thumbnail-container > div:nth-child(2) > div:first-child > a > div {
 
     background-image: url('Photos/ArupUoS1.jpg') !important;
 
 }
 
-.project-thumbnail-container > div:nth-child(2) > div:last-child > div:first-child {
+.project-thumbnail-container > div:nth-child(2) > div:last-child > a > div {
 
     background-image: url('Photos/ThinkerArt.jpg') !important;
 

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Select the elements based on your selector
-    const elements = document.querySelectorAll(".project-thumbnail-container > div > div > div:first-child");
+    const elements = document.querySelectorAll(".project-thumbnail-container > div > div > a > div");
 
     // Log the result to the console to inspect the selected elements
     console.log(elements);
