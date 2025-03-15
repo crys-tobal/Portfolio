@@ -1169,6 +1169,19 @@ nav {
 
             }
 
+        .target p, .target2 p {
+
+            transition: 500ms ease-in;
+            margin-bottom: 25px;
+
+        }
+
+        .active p {
+
+            transform: translateY(15px);
+            transition: 300ms ease;
+
+        }
                
 
 
