@@ -728,33 +728,47 @@ nav {
     font-size: 2rem;
     bottom: 41%;
     text-align: left;
-    width: 220px;
+    width: max-content;
     justify-content: start;
     padding:0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 
 }
 
-    @media (min-width:420px) {
+    .see-my-projects:hover {
 
+        color: slategrey;
 
     }
+
+    
 
 .see-my-projects::after {
 
     content: "";
     position:absolute;
     background: linear-gradient(to right, cyan, magenta, yellow);
-    width: 213px;
+    width: 226px;
     height: 5px;
-    top: 100%;
+    top: 86%;
     border-radius: 2px;
 
 }
 
-.see-my-projects h2 {
+.see-my-projects a {
 
     padding: 0;
     text-decoration: none;
+
+}
+
+.bi-chevron-right {
+
+    margin-left: 15px;
+    margin-top: 5px;
+    scale: 80%;
 
 }
 
