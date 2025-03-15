@@ -1005,8 +1005,8 @@ nav {
                         background: rgba(0, 0, 0, 12%); /* Adjust the opacity (0.4 = 40% darkening) */
                         border-radius: 10px;
                         transition: 300ms ease-in;
-                        backdrop-filter: blur(1px);
-                        -webkit-backdrop-filter: blur(1px);
+                        backdrop-filter: blur(0.7px);
+                        -webkit-backdrop-filter: blur(0.7px);
 
                 }
 
