@@ -1305,15 +1305,7 @@ nav {
     
         }
 
-            @media (min-width:644px) {
-
-                .projects-content h2 {
-                    
-                    margin: 0px 30px;
-            
-                }
-
-            }
+          
 
 
         .project-card {
@@ -1323,7 +1315,7 @@ nav {
     
         }
 
-        .projects-card > div > p {
+        .project-card > div > p {
     
             margin: 30px 0;
     
@@ -1347,6 +1339,13 @@ nav {
 
         }
           
+    .project-card h2 {
+
+        margin: 15px 0px;
+
+    }
+
+ 
 
 
         .project-card > div > div > div {
@@ -1355,6 +1354,14 @@ nav {
             align-items: center;
 
         }
+
+            @media (min-width:644px) {
+                .project-card > div > div > div {
+
+                    padding-bottom: 2%;
+
+                }
+            }
 
 
         .project-card > div > div > div > div {
@@ -1414,12 +1421,12 @@ nav {
 
     }
 
-        @media (min-width:644px) {
+        @media (min-width:800px) {
 
 
             .project-card > div {
 
-                width: 80%;
+                width: 90%;
         
             }
         
@@ -1431,8 +1438,14 @@ nav {
             }
         }
 
+    .project-card .desktop-flex-row > div > div:first-child {
 
+        flex: 0 0 20%;
+        align-items: center;
 
+    }
+
+    
 
 
     .social-media {
@@ -1478,8 +1491,100 @@ nav {
 
 }
 
+
+
+
+
+
 .about-content {
 
-    padding: 50px;
+    padding: 0px;
+
+}
+
+
+.about-content > div:first-child {
+
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+    @media (min-width:644px) {
+
+        .about-content > div:first-child {
+
+            justify-content: start;
+        
+        }
+
+    }
+
+.about-content > .desktop-flex-row > h1 {
+
+    margin-right: 0;
+    font-weight: 700;
+    padding: 20px 0px;
+    min-width: 170px;
+
+}
+
+    @media (min-width:644px) {
+
+        .about-content > .desktop-flex-row > h1 {
+
+            margin-right: min(350px, 24vw);
+
+        }
+    }
+
+    .about-content > .desktop-flex-row > h1::after {
+
+
+            content: "";
+            position:relative;
+            display: block;
+            background: linear-gradient(to right, cyan, magenta, yellow);
+            width: 109%;
+            height: 5px;
+            top: 31%;
+            left: -4px;
+            border-radius: 2px;
+
+
+    }
+
+.about-content > .desktop-flex-row {
+
+    flex-direction: column-reverse;
+
+}
+
+    @media (min-width:644px) {
+
+        .about-content > .desktop-flex-row {
+
+            flex-direction: row;
+        
+        }
+
+    }
+
+.about-portrait {
+
+    background-image: url('Photos/CristobalPortrait.jpeg');
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.about-welcome-msg {
+
+    padding: 30px 0px;
+    max-width: 600px;
 
 }
