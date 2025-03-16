@@ -1171,7 +1171,7 @@ nav {
 
         .target p, .target2 p {
 
-            transition: 500ms ease-in;
+            transition: 500ms ease-out;
             margin-bottom: 25px;
 
         }
@@ -1179,7 +1179,7 @@ nav {
         .active p {
 
             transform: translateY(15px);
-            transition: 300ms ease;
+            padding-bottom: 30px;
 
         }
                
