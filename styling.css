@@ -782,15 +782,22 @@ nav {
 
     
 
-.see-my-projects::after {
+.see-my-projects > h2::after {
 
     content: "";
-    position:absolute;
+    position:relative;
     background: linear-gradient(to right, cyan, magenta, yellow);
-    width: 220px;
     height: 5px;
-    top: 100%;
+
+
+    display: block;
+
+    width: 92%;
+    top: 31%;
+    left: -4px;
     border-radius: 2px;
+
+    
 
 }
 
@@ -1082,7 +1089,7 @@ nav {
 
             .target2 {
 
-                padding: 0px 14vw 15px;
+                padding: 0px 14vw 70px;
 
 
             }
@@ -1183,10 +1190,17 @@ nav {
 
             content: "";
             background: linear-gradient(to right, cyan, magenta, yellow);
-            width: 195px;
             height: 5px;
             border-radius: 2px;
             display: block;
+
+            position:relative;
+
+            width: 92%;
+            top: 31%;
+            left: -4px;
+
+
 
     }
 
@@ -1481,6 +1495,8 @@ nav {
             top: 31%;
             left: -4px;
             border-radius: 2px;
+
+            
 
 
     }
