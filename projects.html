@@ -164,8 +164,8 @@
                                 <span>Link to Hi-Fi Prototype</span> 
                             </a>
 
-                            <a href="" target="_blank"> 
-                                <span>Case Study in Progress</span> 
+                            <a href="https://miro.com/app/board/uXjVKItjib8=/?share_link_id=719133963864" target="_blank"> 
+                                <span>Link to Miro Board</span> 
                             </a>
                                 
                     
@@ -203,7 +203,7 @@
                             </li>
                         </ul>
                         
-
+                        <strong>Embedded Gallery is not finished, for better view use Miro Link above</strong>
                     </div>
                 
                 
@@ -222,24 +222,19 @@
         </div>               
     </div>
 
-            <div class="ux-container desktop-flex-row">
-                <div class="project-discover" onclick="togglePDF('pdf-discover')">Discover</div>
-                <div class="project-define" onclick="togglePDF('pdf-define')">Define</div>
-                <div class="project-ideate" onclick="togglePDF('pdf-ideate')">Ideate</div>
-            </div>
-            
-            <!-- Hidden PDF Sections -->
-            <div id="pdf-discover" class="pdf-container">
-                <iframe src="Photos/AriseDiscover.pdf"></iframe>
-            </div>
-            
-            <div id="pdf-define" class="pdf-container">
-                <iframe src="Photos/AriseDefine.pdf"></iframe>
-            </div>
-            
-            <div id="pdf-ideate" class="pdf-container">
-                <iframe src="Photos/AriseIdeate.pdf"></iframe>
-            </div>
+    <div class="ux-container">
+        <div class="project-discover" onclick="loadSVG('Photos/AriseDiscover.svg')">Discover</div>
+        <div class="project-define" onclick="loadSVG('Photos/AriseDefine.svg')">Define</div>
+        <div class="project-ideate" onclick="loadSVG('Photos/AriseIdeate.svg')">Ideate</div>
+    </div>
+    
+    <div class="svg-container" id="svg-viewer">
+
+        <div class="svg-content"></div>
+
+    </div>
+
+
 
 
     <div id="Arup" class="project-card">

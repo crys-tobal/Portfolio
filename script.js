@@ -136,18 +136,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function loadSVG(file) {
+    let container = document.getElementById("svg-viewer");
+    let content = container.querySelector(".svg-content");
 
+    // Clear previous content
+    content.innerHTML = '';
 
-function togglePDF(pdfId) {
-    let pdfSection = document.getElementById(pdfId);
-    
-    // Close any other open PDFs
-    document.querySelectorAll('.pdf-container').forEach(el => {
-        if (el.id !== pdfId) {
-            el.classList.remove('active');
-        }
-    });
+    // Create new SVG element
+    let img = document.createElement("img");
+    img.src = file;
+    img.alt = "Loaded SVG";
 
-    // Toggle the selected PDF
-    pdfSection.classList.toggle('active');
+    content.appendChild(img);
+    container.style.display = "block"; // Show container
+
+    // Reset scroll position to the start
+    container.scrollLeft = 0;
 }

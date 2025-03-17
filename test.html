@@ -44,6 +44,112 @@
 </head>
 <body>
 
+
+    <style>
+        .ux-container {
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
+    
+        .project-discover,
+        .project-define,
+        .project-ideate {
+            padding: 10px 20px;
+            background: lightgray;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+    
+        .project-discover:hover,
+        .project-define:hover,
+        .project-ideate:hover {
+            background: gray;
+        }
+    
+        /* Scrollable Container */
+        .svg-scroll-container {
+            position: fixed; /* Keeps it in view */
+            bottom: 0; /* Aligns to the bottom of the page */
+            left: 0;
+            width: 100vw; /* Full viewport width */
+            height: 300px; /* Set fixed height */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Prevent vertical scrolling */
+            white-space: nowrap; /* Keep all elements in a row */
+            background: rgba(255, 255, 255, 0.95); /* Light background for visibility */
+            border-top: 2px solid #ccc;
+            display: none; /* Initially hidden */
+        }
+    
+        /* Ensures SVG scales while maintaining aspect ratio */
+        .svg-content {
+            display: inline-block; /* Prevents it from shrinking */
+            height: 100%; /* Matches container height */
+        }
+    
+        .svg-content img {
+            height: 100%; /* Scale SVG based on height */
+            width: auto; /* Maintain aspect ratio */
+            display: inline-block;
+        }
+    </style>
+    
+    <div class="ux-container">
+        <div class="project-discover" onclick="loadSVG('Photos/AriseDiscover.svg')">Discover</div>
+        <div class="project-define" onclick="loadSVG('Photos/AriseDefine.svg')">Define</div>
+        <div class="project-ideate" onclick="loadSVG('Photos/AriseIdeate.svg')">Ideate</div>
+    </div>
+    
+    <div class="svg-container" id="svg-viewer">
+
+        <div class="svg-content"></div>
+
+    </div>
+    </div>
+    
+    <script>
+        function loadSVG(file) {
+            let container = document.getElementById("svg-viewer");
+            let content = container.querySelector(".svg-content");
+    
+            // Clear previous content
+            content.innerHTML = '';
+    
+            // Create new SVG element
+            let img = document.createElement("img");
+            img.src = file;
+            img.alt = "Loaded SVG";
+    
+            content.appendChild(img);
+            container.style.display = "block"; // Show container
+    
+            // Reset scroll position to the start
+            container.scrollLeft = 0;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="flex-row">
             
                 <strong>Role:</strong> 
@@ -103,6 +209,7 @@
             window.addEventListener("resize", checkPosition);
             checkPosition(); // Run once on page load
         });
+        
     </script>
 
 </body>

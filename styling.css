@@ -1410,7 +1410,9 @@ nav {
         gap: max(10px, 2vw);
         align-items: center;
         justify-content: center;
-        padding: 20px 0px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        margin: 0px max(10px, 2vw);
 
     }
 
@@ -1441,33 +1443,48 @@ nav {
             color: white;
         }
 
+        .ux-container {
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+        }
 
+/* Scrollable Container */
+.svg-container {
 
-.pdf-container {
-    max-height: 0;  /* Initially hidden */
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
-    transform: translateY(-10px);
+    width: 100vw;
+    display: block;
+    margin-bottom: 80px;
+
+}
+
+.svg-scroll-container {
+    position: fixed; /* Keeps it in view */
+    bottom: 0; /* Aligns to the bottom of the page */
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 300px; /* Set fixed height */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    white-space: nowrap; /* Keep all elements in a row */
+    background: rgba(255, 255, 255, 0.95); /* Light background for visibility */
+    border-top: 2px solid #ccc;
+    display: none; /* Initially hidden */
+}
+
+/* Ensures SVG scales while maintaining aspect ratio */
+.svg-content {
+    display: inline-block; /* Prevents it from shrinking */
+    height: 100%; /* Matches container height */
     width: 100%;
-    background: #f4f4f4;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
 }
 
-.pdf-container iframe {
-    width: 80%;
-    height: 500px;
-    border: none;
-}
-
-.pdf-container.active {
-    max-height: 80vh;  /* Adjust based on your content */
-    opacity: 1;
-    transform: translateY(0);
-    overflow-x: auto;  /* Enable horizontal scrolling */
+.svg-content img {
+    height: 80vh; /* Scale SVG based on height */
+    width: auto; /* Maintain aspect ratio */
+    display: inline-block;
 }
 
     .project-discover {
