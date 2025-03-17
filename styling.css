@@ -53,30 +53,8 @@ header a {
 
     justify-content: start;
 
-    height: 2350px;
 
 }
-
-
-    @media (min-width:495px) {
-
-        .content {
-
-            height: 2160px;
-        
-        }
-
-    }
-
-    @media (min-width:800px) {
-
-        .content {
-
-            height: 1450px;
-        
-        }
-
-    }
 
 
 h1 {
@@ -381,6 +359,8 @@ li {
     cursor: default;
     line-height: 1.6em;
     font-size: 0.8em;
+    padding-top: clamp(15px, 10vh, 25vh);
+    padding-bottom: clamp(50px, 24vh, 40vh);
 
 }
 
@@ -408,15 +388,6 @@ li {
         }
     }
 
-    
-  
-
-   
-
-    @media (max-width:390px) {
-
-
-    }
 
 .title {
 
@@ -497,7 +468,6 @@ li {
         left: 0;
         width: 100vw;
 
-        position: absolute;
         margin-top: 50px;
         transition: 300ms ease-in;
     
@@ -509,11 +479,9 @@ li {
             @media (min-width: 800px) {
 
                 .project-thumbnail-container {
-    
-                    left: 14vw !important;
-                    width: 74vw !important;
-                    gap: 2vmin;
 
+                    gap: 2vmin;
+                    padding:0px min(14vw, 400px);
                 
                 }     
     
@@ -650,13 +618,13 @@ nav {
 
     height: 120vh;
     width: 100%;
-    position: relative;
     inset: 0;
     overflow: hidden;
     border: 50px;
     top: -20%;
     left: 0;
     scale: 100%;
+    z-index: -1;
 
 }
 
@@ -888,80 +856,12 @@ nav {
 
 .recent-projects-container {
 
-    top: 400px;
-    position: absolute;
     left: 0;
 
 
 }
 
-           
 
-    @media (min-width:400px) {
-
-        .recent-projects-container {
-
-            top: 62%;
-        
-        }
-
-    }
-
-    @media (min-width:644px) {
-
-        .recent-projects-container {
-
-            top: 60%;
-        
-        }
-
-    }
-
-    
-    @media (min-aspect-ratio: 10/9) {
-        @media (max-height:650px) {
-
-            .recent-projects-container {
-
-                top: 55%;
-            
-            }
-
-        }
-
-        @media (max-height:500px) {
-
-            .recent-projects-container {
-
-                top: 350px;
-            
-            }
-
-        }
-
-    }
-   
-    
-    @media (min-height:580px) {
-
-        .recent-projects-container {
-
-            top: 58%;
-        
-        }
-
-    }
-
-
-    @media (min-height:670px) {
-
-        .recent-projects-container {
-
-            top: 56%;
-        
-        }
-
-    }
 
                                             @media (min-width:9150px) {
 
