@@ -351,7 +351,7 @@ li {
 
 .page-title {
 
-    max-width: 560px;
+    max-width: 580px;
     text-align: left;
     top: 20vh;
     margin-right: 70px;
@@ -1422,7 +1422,14 @@ nav {
         text-align: center;
         flex-direction: column;
         padding: 20px;
+        color: white;
         
+    }
+
+    footer a {
+
+        text-decoration: none;
+
     }
     
 
