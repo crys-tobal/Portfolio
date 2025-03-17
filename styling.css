@@ -1441,17 +1441,16 @@ nav {
 .about-content {
 
     padding: 0px;
-    align-items: start;
+    align-items: center;
 
 }
 
 
-.about-content > .desktop-flex-row{
+.about-content > .desktop-flex-row {
 
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    max-width: 100%;
 
 }
 
@@ -1538,5 +1537,11 @@ nav {
 .about-welcome-msg h2 {
 
     margin-bottom: 25px;
+
+}
+
+.about-welcome-msg a {
+
+    margin-top: 25px;
 
 }
