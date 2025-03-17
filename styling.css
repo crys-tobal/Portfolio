@@ -480,7 +480,7 @@ li {
                 .project-thumbnail-container {
 
                     gap: 2vmin;
-                    padding:0px min(14vw, 400px);
+                    padding:0px min(8vw, 400px);
                 
                 }     
     
@@ -935,7 +935,7 @@ nav {
 
         .project-thumbnail-container > div {
 
-            gap: 7vmin;
+            gap: clamp(2vmin, 4vmin, 7vmin);
         
         }
 
