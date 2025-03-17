@@ -359,7 +359,7 @@ li {
     line-height: 1.6em;
     font-size: 0.8em;
     padding-top: clamp(15px, 10vh, 25vh);
-    padding-bottom: clamp(50px, 24vh, 40vh);
+    padding-bottom: clamp(50px, 20vh, 40vh);
 
 }
 
