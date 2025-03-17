@@ -752,7 +752,18 @@ nav {
 
     }
 
+.project-card .gradient {
 
+    left: -40%;
+    overflow: visible;
+
+}
+
+.project-card .gradient::after {
+
+    left:40%;
+
+}
 
 
 
@@ -1169,20 +1180,11 @@ nav {
 
 .get-in-contact h2 {
 
-    margin-top: calc(125px - 12vw);
+    margin-top: 50px;
     font-weight: 400;
     margin-bottom: 25px;
 
 }
-
-      @media (min-width:495px) {
-        .get-in-contact h2 {
-        margin-top: calc(225px - 10vw);
-        }
-    }
-
-
-
  
 
     .get-in-contact > h2::after {
@@ -1294,6 +1296,7 @@ nav {
 
             width: 100%;
             align-items: center;
+            gap: 12px;
 
         }
 
@@ -1345,7 +1348,6 @@ nav {
                 border-radius: 15px; 
                 transition: 150ms ease-in;
                 letter-spacing: 0.5px;
-                margin: 15px 0px;
                 font-weight: 700;
 
 
