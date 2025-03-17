@@ -1403,7 +1403,91 @@ nav {
 
     }
 
-    
+
+    .ux-container {
+
+        max-width: 100%;
+        gap: max(10px, 2vw);
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+
+    }
+
+    .ux-container div {
+
+
+        height: 40px;
+        width: 120px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        border-radius: 15px;
+        transition: 300ms ease;
+        cursor: pointer;
+
+    }   
+
+        .ux-container div:nth-child(2) {
+
+            color: white;
+
+
+        }
+
+        .ux-container div:hover {
+
+            background-color: slategrey;
+            color: white;
+        }
+
+
+
+.pdf-container {
+    max-height: 0;  /* Initially hidden */
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translateY(-10px);
+    width: 100%;
+    background: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-container iframe {
+    width: 80%;
+    height: 500px;
+    border: none;
+}
+
+.pdf-container.active {
+    max-height: 80vh;  /* Adjust based on your content */
+    opacity: 1;
+    transform: translateY(0);
+    overflow-x: auto;  /* Enable horizontal scrolling */
+}
+
+    .project-discover {
+
+
+        background-color: cyan;
+
+    }
+
+    .project-define {
+
+        background-color: magenta;
+
+    }
+
+    .project-ideate {
+
+        background-color: yellow;
+
+    }
 
 
     .social-media {

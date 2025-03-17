@@ -133,3 +133,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 100); // Small delay to allow content to load
     }
 });
+
+
+
+
+
+function togglePDF(pdfId) {
+    let pdfSection = document.getElementById(pdfId);
+    
+    // Close any other open PDFs
+    document.querySelectorAll('.pdf-container').forEach(el => {
+        if (el.id !== pdfId) {
+            el.classList.remove('active');
+        }
+    });
+
+    // Toggle the selected PDF
+    pdfSection.classList.toggle('active');
+}
