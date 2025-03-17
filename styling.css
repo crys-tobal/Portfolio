@@ -670,7 +670,7 @@ nav {
     background-color: magenta;
     left: 74%;
     top: -25%;
-    animation-delay: 8s;
+    animation-delay: 1.6s;
 
 
 }
@@ -682,7 +682,7 @@ nav {
     background-color: rgb(37, 105, 144);
     left: 50%;
     top: 12%;
-    animation-delay: 3.2s;
+    animation-delay: 4.5s;
 
 
 }
@@ -754,14 +754,27 @@ nav {
 
 .project-card .gradient {
 
-    left: -40%;
+    height: 1200px;
+    top:-30%;
+    left: -30%;
     overflow: visible;
 
 }
 
+    @media (min-width:800px) {
+
+        .project-card .gradient {
+
+            height: 800px;
+            top:-40%;
+        
+        }
+
+    }
+
 .project-card .gradient::after {
 
-    left:40%;
+    left:30%;
 
 }
 
@@ -1320,6 +1333,7 @@ nav {
           
             padding: 20px;
             flex: 0 0 40%;  /* Takes up 40% of the space */
+            justify-content: center;
 
 
         }
@@ -1342,7 +1356,6 @@ nav {
 
 
                 background-color: rgb(255, 255, 255); 
-                color: slategrey;
                 padding: 7px 10px; 
                 display: inline-block; 
                 border-radius: 15px; 
